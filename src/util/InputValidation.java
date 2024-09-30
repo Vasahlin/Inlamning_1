@@ -26,13 +26,13 @@ public final class InputValidation {
 
     private static void stringNotEmpty(String toExamine) throws IllegalArgumentException {
         if (toExamine.trim().isEmpty()) {
-            throw new IllegalArgumentException("Plant name is empty." + System.lineSeparator());
+            throw new IllegalArgumentException("Plant name is empty.");
         }
     }
 
     private static void listNotEmpty(ArrayList<Plant> plantList) {
         if (plantList.isEmpty()) {
-            throw new NullPointerException("List of plants contains no elements." + System.lineSeparator());
+            throw new NullPointerException("List of plants contains no elements.");
         }
     }
 
@@ -48,7 +48,7 @@ public final class InputValidation {
                 low = mid + 1;
             }
         }
-        throw new NoSuchFieldError("List of plants contains no plant with such name." + System.lineSeparator());
+        throw new NoSuchFieldError("List of plants contains no plant with such name.");
     }
 
    public static boolean userWantsToExit(String userInput) {

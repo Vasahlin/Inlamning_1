@@ -25,7 +25,6 @@ public class UserInteraction {
     public void start() {
         String userInput;
         int index;
-        Print printer = new Print();
 
         Print.printMessage(Print.instructions);
         do {
@@ -33,6 +32,7 @@ public class UserInteraction {
             userInput = myScan.nextLine();
             index = util.InputValidation.fieldExists(userInput, plantList);
             if (index >= 0) {
+                Print printer = new Print();
                 printer.printSustenance(plantList.get(index));
                 Print.printMessage(Print.askContinue);
                 userInput = myScan.nextLine();

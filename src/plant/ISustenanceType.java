@@ -4,13 +4,13 @@ public interface ISustenanceType {
 
     static String getSustenanceType(Plant plant) {
         if (plant instanceof Cactus) {
-            return sustenanceName.CACTUS.sustenanceName;
+            return sustenanceName.CACTUS.sustenance;
         }
         if (plant instanceof CarnivorousPlant) {
-            return sustenanceName.CARNIVORE.sustenanceName;
+            return sustenanceName.CARNIVORE.sustenance;
         }
         if (plant instanceof Palm) {
-            return sustenanceName.PALM.sustenanceName;
+            return sustenanceName.PALM.sustenance;
         }
         return "Unknown";
     }
@@ -20,10 +20,10 @@ public interface ISustenanceType {
         PALM("tap water"),
         CARNIVORE("protein drink");
 
-        public final String sustenanceName;
+        public final String sustenance;
 
         sustenanceName(String sustenance) {
-            this.sustenanceName = sustenance;
+            this.sustenance = sustenance;
         }
     }
 }
