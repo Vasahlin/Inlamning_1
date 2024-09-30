@@ -1,6 +1,6 @@
 package plant;
 
-public interface SustenanceType {
+public interface ISustenanceType {
 
     static String getSustenanceType(Plant plant) {
         if (plant instanceof Cactus) {

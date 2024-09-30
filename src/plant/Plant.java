@@ -1,6 +1,6 @@
 package plant;
 
-public abstract class Plant implements SustenanceType {
+public abstract class Plant implements ISustenanceType {
     protected double lengthMeter;
     protected String plantName;
 
