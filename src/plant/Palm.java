@@ -11,6 +11,6 @@ public class Palm extends Plant {
     }
 
     public String getSustenanceType() {
-        return sustenanceName.PALM.toString();
+        return SustenanceType.getSustenanceType(this);
     }
 }

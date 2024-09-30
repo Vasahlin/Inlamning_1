@@ -8,9 +8,6 @@ final public class Print {
     final public static String askContinue = "(Enter Y or yes to continue)"
             + System.lineSeparator() + "Do you want to continue? ";
 
-    private Print() {
-        throw new AssertionError();
-    }
 
     public static void printMessage(String message) {
         if (message.equals(instructions)) {
@@ -24,10 +21,10 @@ final public class Print {
         }
     }
 
-    public static void printSustenance(Plant plant) {
+    public void printSustenance(Plant plant) {
         System.out.printf("Type: %s. Sustenance: %.2f(l) of %s. %n%n",
                 plant.getClass().getSimpleName(),
-                plant.getSustenanceVolume(), Plant.getSustenanceType(plant));
+                plant.getSustenanceVolume(), SustenanceType.getSustenanceType(plant));
     }
 
 

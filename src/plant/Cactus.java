@@ -11,6 +11,6 @@ public class Cactus extends Plant{
     }
 
     public String getSustenanceType() {
-        return sustenanceName.CACTUS.toString();
+        return SustenanceType.getSustenanceType(this);
     }
 }

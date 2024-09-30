@@ -14,8 +14,4 @@ public abstract class Plant implements SustenanceType {
     }
 
     abstract public double getSustenanceVolume();
-
-    public static String getSustenanceType(Plant plant) {
-        return "Unknown";
-    }
 }
