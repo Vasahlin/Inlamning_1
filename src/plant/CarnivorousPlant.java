@@ -11,6 +11,6 @@ public class CarnivorousPlant extends Plant{
     }
 
     public String getSustenanceType() {
-        return "protein drink";
+        return sustenanceName.CARNIVORE.toString();
     }
 }

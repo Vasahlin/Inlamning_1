@@ -11,6 +11,6 @@ public class Palm extends Plant {
     }
 
     public String getSustenanceType() {
-        return "tap water";
+        return sustenanceName.PALM.toString();
     }
 }

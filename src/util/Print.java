@@ -27,6 +27,8 @@ final public class Print {
     public static void printSustenance(Plant plant) {
         System.out.printf("Type: %s. Sustenance: %.2f(l) of %s. %n%n",
                 plant.getClass().getSimpleName(),
-                plant.getSustenanceVolume(), plant.getSustenanceType());
+                plant.getSustenanceVolume(), Plant.getSustenanceType(plant));
     }
+
+
 }

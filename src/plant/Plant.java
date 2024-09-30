@@ -1,6 +1,6 @@
 package plant;
 
-public abstract class Plant {
+public abstract class Plant implements SustenanceType {
     protected double lengthMeter;
     protected String plantName;
 
@@ -14,5 +14,8 @@ public abstract class Plant {
     }
 
     abstract public double getSustenanceVolume();
-    abstract public String getSustenanceType();
+
+    public static String getSustenanceType(Plant plant) {
+        return "Unknown";
+    }
 }

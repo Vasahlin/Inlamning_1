@@ -11,6 +11,6 @@ public class Cactus extends Plant{
     }
 
     public String getSustenanceType() {
-        return "tap water";
+        return sustenanceName.CACTUS.toString();
     }
 }
