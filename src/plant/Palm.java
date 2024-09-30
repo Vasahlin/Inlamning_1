@@ -9,8 +9,4 @@ public class Palm extends Plant {
     public double getSustenanceVolume() {
         return this.lengthMeter * 0.5;
     }
-
-    public String getSustenanceType() {
-        return SustenanceType.getSustenanceType(this);
-    }
 }

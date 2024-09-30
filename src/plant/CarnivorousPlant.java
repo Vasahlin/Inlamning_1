@@ -9,8 +9,4 @@ public class CarnivorousPlant extends Plant{
     public double getSustenanceVolume() {
         return 0.1 + this.lengthMeter * 0.2;
     }
-
-    public String getSustenanceType() {
-        return sustenanceName.CARNIVORE.toString();
-    }
 }

@@ -4,13 +4,13 @@ public interface SustenanceType {
 
     static String getSustenanceType(Plant plant) {
         if (plant instanceof Cactus) {
-            return sustenanceName.CACTUS.toString();
+            return sustenanceName.CACTUS.sustenanceName;
         }
         if (plant instanceof CarnivorousPlant) {
-            return sustenanceName.CARNIVORE.toString();
+            return sustenanceName.CARNIVORE.sustenanceName;
         }
         if (plant instanceof Palm) {
-            return sustenanceName.PALM.toString();
+            return sustenanceName.PALM.sustenanceName;
         }
         return "Unknown";
     }

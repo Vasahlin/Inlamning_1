@@ -9,8 +9,4 @@ public class Cactus extends Plant{
     public double getSustenanceVolume() {
         return 0.02;
     }
-
-    public String getSustenanceType() {
-        return SustenanceType.getSustenanceType(this);
-    }
 }
