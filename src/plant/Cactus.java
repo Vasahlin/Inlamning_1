@@ -1,9 +1,10 @@
 package plant;
 
 public class Cactus extends Plant{
-    private String plantName;
 
-    public Cactus(double lengthMeter, String plantName) {
+    private final String plantName;
+
+    public Cactus(String plantName) {
         this.plantName = plantName;
     }
 

@@ -2,8 +2,8 @@ package plant;
 
 public class Palm extends Plant {
 
-    private double lengthMeter;
-    private String plantName;
+    private final double lengthMeter;
+    private final String plantName;
 
     public Palm(double lengthMeter, String plantName) {
         this.lengthMeter = lengthMeter;

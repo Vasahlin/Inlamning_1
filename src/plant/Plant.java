@@ -1,11 +1,13 @@
 package plant;
 
+/**
+    Inheritance
+ */
 public abstract class Plant implements Sustenance {
-    abstract public String getPlantName();
-    abstract public String getSustenanceType();
-    abstract public double getSustenanceVolume();
 
-    static String getSustenanceType(Plant plant) {
+    abstract public String getPlantName();
+
+    protected static String getSustenanceType(Plant plant) {
         if (plant instanceof Cactus) {
             return sustenanceName.CACTUS.sustenance;
         }
@@ -19,7 +21,7 @@ public abstract class Plant implements Sustenance {
     }
 
     /**
-        Example of enum
+        Enum
      */
     enum sustenanceName {
         CACTUS("sparkling water"),

@@ -1,8 +1,12 @@
 package plant;
 
 public class CarnivorousPlant extends Plant{
-    private double lengthMeter;
-    private String plantName;
+
+    /**
+        Encapsulation
+     */
+    private final double lengthMeter;
+    private final String plantName;
 
     public CarnivorousPlant(double lengthMeter, String plantName) {
         this.lengthMeter = lengthMeter;

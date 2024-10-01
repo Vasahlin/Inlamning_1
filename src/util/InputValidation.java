@@ -11,12 +11,12 @@ public final class InputValidation {
         throw new AssertionError();
     }
 
-    public static int fieldExists(String toExamine, ArrayList<Plant> plantList) {
+    public static int validateAndFindIndex(String toExamine, ArrayList<Plant> plantList) {
         if (!toExamine.equalsIgnoreCase(UserInteraction.exit)) {
             try {
                 stringNotNull(toExamine);
                 listNotNull(plantList);
-                return indexOfPlant(toExamine, plantList);
+                return searchForIndex(toExamine, plantList);
             } catch (IllegalArgumentException | NullPointerException | NoSuchFieldError e) {
                 System.out.println(e.getMessage());
                 return -1;
@@ -36,7 +36,7 @@ public final class InputValidation {
         }
     }
 
-    private static int indexOfPlant(String toExamine, ArrayList<Plant> plantList) throws NoSuchFieldError {
+    private static int searchForIndex(String toExamine, ArrayList<Plant> plantList) throws NoSuchFieldError {
         int low = 0, high = plantList.size() - 1;
         while (low <= high) {
             int mid = low + ((high - low) / 2);

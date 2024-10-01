@@ -1,7 +1,7 @@
 package userInteraction;
 
 import plant.*;
-import util.Print;
+import util.*;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -16,7 +16,7 @@ public class UserInteraction {
         myScan = new Scanner(System.in);
         plantList = new ArrayList<>();
         Collections.addAll(plantList,
-                new Cactus(0.2, "Igge"),
+                new Cactus("Igge"),
                 new Palm(5, "Laura"),
                 new CarnivorousPlant(0.7, "Meatloaf"),
                 new Palm(1, "Olof"));
@@ -30,7 +30,7 @@ public class UserInteraction {
         do {
             Print.printMessage(Print.readPlant);
             userInput = myScan.nextLine();
-            index = util.InputValidation.fieldExists(userInput, plantList);
+            index = InputValidation.validateAndFindIndex(userInput, plantList);
             if (index >= 0) {
                 Print printer = new Print();
                 printer.printSustenance(plantList.get(index));
