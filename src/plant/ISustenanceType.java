@@ -12,7 +12,7 @@ public interface ISustenanceType {
         if (plant instanceof Palm) {
             return sustenanceName.PALM.sustenance;
         }
-        return "Unknown";
+        return "unknown liquid";
     }
 
     enum sustenanceName {
