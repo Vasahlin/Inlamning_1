@@ -14,8 +14,8 @@ public final class InputValidation {
     public static int fieldExists(String toExamine, ArrayList<Plant> plantList) {
         if (!toExamine.equalsIgnoreCase(UserInteraction.exit)) {
             try {
-                stringNotEmpty(toExamine);
-                listNotEmpty(plantList);
+                stringNotNull(toExamine);
+                listNotNull(plantList);
                 return indexOfPlant(toExamine, plantList);
             } catch (IllegalArgumentException | NullPointerException | NoSuchFieldError e) {
                 System.out.println(e.getMessage());
@@ -24,13 +24,13 @@ public final class InputValidation {
         } else return -1;
     }
 
-    private static void stringNotEmpty(String toExamine) throws IllegalArgumentException {
-        if (toExamine.trim().isEmpty()) {
+    private static void stringNotNull(String toExamine) throws IllegalArgumentException {
+        if (toExamine == null || toExamine.trim().isEmpty()) {
             throw new IllegalArgumentException("Plant name is empty.");
         }
     }
 
-    private static void listNotEmpty(ArrayList<Plant> plantList) {
+    private static void listNotNull(ArrayList<Plant> plantList) {
         if (plantList.isEmpty()) {
             throw new NullPointerException("List of plants contains no elements.");
         }
