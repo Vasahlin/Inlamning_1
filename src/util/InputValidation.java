@@ -12,7 +12,7 @@ public final class InputValidation {
     }
 
     public static int validateAndFindIndex(String toExamine, ArrayList<Plant> plantList) {
-        if (!toExamine.equalsIgnoreCase(UserInteraction.loopControlSignal.EXIT.label_1)) {
+        if (!toExamine.equalsIgnoreCase(UserInteraction.loopControlSignal.EXIT.identifier)) {
             try {
                 stringNotNull(toExamine);
                 listNotNull(plantList);
@@ -52,6 +52,8 @@ public final class InputValidation {
     }
 
    public static boolean userWantsToExit(String userInput) {
-        return !(userInput.equalsIgnoreCase(UserInteraction.loopControlSignal.EXIT.label_1) || userInput.equalsIgnoreCase("Y"));
+        String yes = UserInteraction.loopControlSignal.CONTINUE.identifier;
+        String y = Character.toString(UserInteraction.loopControlSignal.CONTINUE.identifier.charAt(0));
+        return !(userInput.equalsIgnoreCase(yes) || userInput.equalsIgnoreCase(y));
     }
 }

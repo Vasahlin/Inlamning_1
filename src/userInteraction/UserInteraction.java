@@ -34,27 +34,24 @@ public class UserInteraction {
                 Print printer = new Print();
                 printer.printSustenance(plantList.get(index));
                 Print.printMessage(Print.askContinue);
-                userInput = myScan.nextLine();
-                if (util.InputValidation.userWantsToExit(userInput)) {
-                    userInput = loopControlSignal.EXIT.label_1;
+                if (InputValidation.userWantsToExit(userInput = myScan.nextLine())) {
+                    userInput = loopControlSignal.EXIT.identifier;
                 }
             }
-        } while (!userInput.trim().equalsIgnoreCase(loopControlSignal.EXIT.label_1));
+        } while (!userInput.trim().equalsIgnoreCase(loopControlSignal.EXIT.identifier));
     }
 
     /**
         SIGRUN: ENUM
      */
     public enum loopControlSignal {
-        EXIT("exit", "EXIT"),
-        CONTINUE("yes", "Y");
+        EXIT("exit"),
+        CONTINUE("yes");
 
-        public final String label_1;
-        public final String label_2;
+        public final String identifier;
 
-        loopControlSignal(String label_1, String label_2) {
-            this.label_1 = label_1;
-            this.label_2 = label_2;
+        loopControlSignal(String label_1) {
+            this.identifier = label_1;
         }
     }
 }
