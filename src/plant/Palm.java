@@ -1,7 +1,7 @@
 package plant;
 
 public class Palm extends Plant {
-
+    private static final String sustenanceType = "tap water";
     private final double lengthMeter;
     private final String plantName;
 
@@ -15,7 +15,7 @@ public class Palm extends Plant {
     }
 
     public String getSustenanceType() {
-        return getSustenanceType(this);
+        return sustenanceType;
     }
 
     public double getSustenanceVolume() {

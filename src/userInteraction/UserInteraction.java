@@ -10,7 +10,6 @@ import java.util.Scanner;
 public class UserInteraction {
     private final Scanner myScan;
     private final ArrayList<Plant> plantList;
-    public final static String exit = "exit";
 
     public UserInteraction() {
         myScan = new Scanner(System.in);
@@ -37,9 +36,25 @@ public class UserInteraction {
                 Print.printMessage(Print.askContinue);
                 userInput = myScan.nextLine();
                 if (util.InputValidation.userWantsToExit(userInput)) {
-                    userInput = exit;
+                    userInput = loopControlSignal.EXIT.label_1;
                 }
             }
-        } while (!userInput.trim().equalsIgnoreCase(exit));
+        } while (!userInput.trim().equalsIgnoreCase(loopControlSignal.EXIT.label_1));
+    }
+
+    /**
+        SIGRUN: ENUM
+     */
+    public enum loopControlSignal {
+        EXIT("exit", "EXIT"),
+        CONTINUE("yes", "Y");
+
+        public final String label_1;
+        public final String label_2;
+
+        loopControlSignal(String label_1, String label_2) {
+            this.label_1 = label_1;
+            this.label_2 = label_2;
+        }
     }
 }

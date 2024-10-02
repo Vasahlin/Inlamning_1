@@ -1,10 +1,14 @@
 package plant;
 
+/**
+    SIGRUN: Inheritance
+ */
 public class CarnivorousPlant extends Plant{
 
     /**
-        Encapsulation
+        SIGRUN: Encapsulation
      */
+    private static final String sustenanceType = "protein drink";
     private final double lengthMeter;
     private final String plantName;
 
@@ -18,7 +22,7 @@ public class CarnivorousPlant extends Plant{
     }
 
     public String getSustenanceType() {
-        return getSustenanceType(this);
+        return sustenanceType;
     }
 
     public double getSustenanceVolume() {

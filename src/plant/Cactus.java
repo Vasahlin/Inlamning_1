@@ -1,7 +1,7 @@
 package plant;
 
 public class Cactus extends Plant{
-
+    private static final String sustenanceType = "sparkling water";
     private final String plantName;
 
     public Cactus(String plantName) {
@@ -9,7 +9,7 @@ public class Cactus extends Plant{
     }
 
     public String getSustenanceType() {
-        return getSustenanceType(this);
+        return sustenanceType;
     }
 
     public String getPlantName() {
