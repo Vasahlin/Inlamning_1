@@ -50,8 +50,8 @@ public class UserInteraction {
 
         public final String identifier;
 
-        loopControlSignal(String label_1) {
-            this.identifier = label_1;
+        loopControlSignal(String identifier) {
+            this.identifier = identifier;
         }
     }
 }
