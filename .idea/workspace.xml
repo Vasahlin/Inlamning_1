@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bd7be58-be47-4616-bbae-5fc13c972ba8" name="Changes" comment="asd">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userInteraction/UserInteraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInteraction/UserInteraction.java" afterDir="false" />
-    </list>
+    <list default="true" id="1bd7be58-be47-4616-bbae-5fc13c972ba8" name="Changes" comment="asd" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +103,7 @@
       <workItem from="1727794518600" duration="3937000" />
       <workItem from="1727803506720" duration="890000" />
       <workItem from="1727808285679" duration="1979000" />
-      <workItem from="1727835126600" duration="4829000" />
+      <workItem from="1727835126600" duration="4875000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <option name="closed" value="true" />
@@ -204,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727840359598</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="asd">
+      <option name="closed" value="true" />
+      <created>1727840485914</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1727840485914</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
